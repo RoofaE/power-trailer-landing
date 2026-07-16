@@ -146,7 +146,7 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 /* ===== SCROLLYTELLING: HOW IT WORKS (the one signature moment) ===== */
 .scrolly { position: relative; height: 450vh; background: var(--panel); }
 .scrolly-sticky { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; padding: 0 6vw; }
-.scrolly-title { font-size: clamp(2.4rem, 8vw, 5rem); color: var(--white); text-align: center; position: absolute; top: 50px; left: 50%; transform: translateX(-50%); width: 100%; }
+.scrolly-title { font-size: clamp(2.4rem, 8vw, 5rem); color: var(--red); text-align: center; position: absolute; top: 50px; left: 50%; transform: translateX(-50%); width: 100%; }
 .scrolly-visual { width: 100%; max-width: 520px; margin-top: 40px; }
 .scrolly-steps { position: relative; height: 420px; width: 100%; }
 .scrolly-step {
@@ -176,11 +176,22 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 .compare-columns { display: flex; gap: 16px; }
 .compare-col { flex: 1; padding: 20px; border-radius: 6px; background: var(--panel); color: var(--white); --muted: #9BA3AE; }
 .compare-col.highlight {
-  background: linear-gradient(135deg, #FFD873, #F7941D 55%, #C97A0D);
+  background: linear-gradient(120deg, #C97A0D, #FFD873, #F7941D, #FFE9B0, #F7941D, #C97A0D);
+  background-size: 300% 100%;
+  animation: goldShine 15s linear infinite;
   border: none;
   color: #241705;
-  --muted: #5a3d10;
-  box-shadow: 0 12px 30px rgba(247,148,29,0.35);
+  --muted: #5A3D10;
+  box-shadow: 0 12px 30px rgba(247,148,29,0.45);
+}
+
+@keyframes goldShine {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .compare-col.highlight { animation: none; }
 }
 .compare-col.highlight .compare-heading { color: #241705; }
 .compare-col.highlight p { color: #241705; font-weight: 600; }
@@ -289,4 +300,10 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
   .scrolly-image { height: 170px; }
   .icon-row { gap: 26px; justify-content: center; }
   .app-card { flex-basis: 200px; }
+}
+
+@media (min-width: 900px){
+  .flip-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
