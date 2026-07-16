@@ -1,425 +1,1069 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mobile Power Station | Pioneer Solar & Flaman</title>
-<meta name="description" content="Self contained off grid power for construction, farms, events, emergency response, and recreation.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<!-- TOP BAR -->
-<header class="topbar theme-light">
-  <div class="brand-lockup">
-    <div class="logo pioneer-logo">
-      <span class="logo-mark"></span>
-      <span class="logo-text">PIONEER<br><small>SOLAR &amp; RENEWABLES</small></span>
-    </div>
-    <div class="brand-divider"></div>
-    <div class="logo flaman-logo">FLAMAN</div>
-  </div>
-</header>
-
-<div class="divider a ink"></div>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-video-wrap">
-    <iframe
-      src="https://www.youtube.com/embed/I5bZsFKQBPc"
-      title="Mobile Power Station"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-    <div class="hero-fade"></div>
-  </div>
-  <div class="hero-copy">
-    <p class="hero-eyebrow fade-up">Self Contained Power for Work and Play</p>
-    <h1 class="fade-up delay-1">POWER <span class="accent">ANYWHERE.</span><br>ANYTIME.</h1>
-    <p class="hero-sub fade-up delay-2">Reliable off grid power for construction sites, farms, events, emergency response, and remote operations.</p>
-    <div class="hero-ctas fade-up delay-3">
-      <button class="btn btn-primary" data-scroll-to="contact" data-request-type="Get Pricing">Get Pricing</button>
-      <button class="btn btn-outline" data-scroll-to="contact" data-request-type="Book a Demo">Book a Demo</button>
-      <button class="btn btn-ghost" data-scroll-to="resources">Download Brochure</button>
-    </div>
-  </div>
-  <div class="scroll-cue"><span></span></div>
-</section>
-
-<div class="divider b red"></div>
-
-<!-- PERFECT FOR -->
-<section class="section perfect-for theme-light">
-  <p class="eyebrow reveal">Built for Real Work</p>
-  <h2 class="reveal">Delivers reliable electricity where grid power is unavailable.</h2>
-
-  <div class="icon-row">
-    <div class="icon-item reveal"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 44a22 22 0 0144 0z"/><line x1="6" y1="44" x2="58" y2="44"/><line x1="32" y1="18" x2="32" y2="24"/></svg><p>Construction Sites</p></div>
-    <div class="icon-item reveal"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="24" width="30" height="16" rx="2"/><path d="M36 28h12l8 8v4h-4"/><circle cx="18" cy="44" r="4"/><circle cx="42" cy="44" r="4"/></svg><p>Farms &amp; Ranches</p></div>
-    <div class="icon-item reveal"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M42 10l6 6-8 8 4 4-14 14-4-4-8 8-6-6 8-8-4-4 14-14 4 4z"/></svg><p>Remote Service Crews</p></div>
-    <div class="icon-item reveal"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="34,8 14,36 28,36 24,56 48,26 34,26"/></svg><p>Emergency Response</p></div>
-    <div class="icon-item reveal"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="18" width="20" height="28" rx="2"/><circle cx="24" cy="26" r="4"/><circle cx="24" cy="38" r="4"/><path d="M38 22a12 12 0 010 20M44 16a20 20 0 010 32"/></svg><p>Events &amp; Festivals</p></div>
-    <div class="icon-item reveal"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 12l22 34H10z"/><line x1="32" y1="12" x2="32" y2="46"/><line x1="20" y1="46" x2="24" y2="34"/><line x1="44" y1="46" x2="40" y2="34"/></svg><p>Recreation &amp; Camping</p></div>
-  </div>
-</section>
-
-<div class="divider a ink"></div>
-
-<!-- CHALLENGE FLIP CARDS -->
-<section class="section challenges theme-light">
-  <p class="eyebrow reveal">What's Your Biggest Power Challenge?</p>
-  <h2 class="reveal">Tap a card to see how we solve it.</h2>
-
-  <div class="flip-grid">
-    <div class="flip-card reveal" tabindex="0">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="20" width="24" height="34" rx="2"/><path d="M38 26h6a4 4 0 014 4v18a4 4 0 01-8 0"/><line x1="20" y1="12" x2="20" y2="20"/><line x1="32" y1="12" x2="32" y2="20"/></svg>
-          <h3>Using a Generator?</h3>
-          <ul class="mini-list"><li>Fuel costs add up</li><li>Frequent maintenance</li><li>Refueling downtime</li><li>Noise and exhaust</li></ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Power Station | Pioneer Solar & Flaman</title>
+    <meta
+      name="description"
+      content="Self contained off grid power for construction, farms, events, emergency response, and recreation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- TOP BAR -->
+    <header class="topbar theme-light">
+      <div class="brand-lockup">
+        <div class="logo pioneer-logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text"
+            >PIONEER<br /><small>SOLAR &amp; RENEWABLES</small></span
+          >
         </div>
-        <div class="flip-back">
-          <h4>How We Help</h4>
-          <ul class="mini-list light"><li>Reduces generator runtime</li><li>Quiet daytime power</li><li>Stores energy for after sunset</li><li>Lowers operating costs</li></ul>
+        <div class="brand-divider"></div>
+        <div class="logo flaman-logo">FLAMAN</div>
+      </div>
+    </header>
+
+    <div class="divider a ink"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/I5bZsFKQBPc"
+          title="Mobile Power Station"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+          "
+          allowfullscreen
+        >
+        </iframe>
+        <div class="hero-fade"></div>
+      </div>
+      <div class="hero-copy">
+        <p class="hero-eyebrow fade-up">
+          Self Contained Power for Work and Play
+        </p>
+        <h1 class="fade-up delay-1">
+          POWER <span class="accent">ANYWHERE.</span><br />ANYTIME.
+        </h1>
+        <p class="hero-sub fade-up delay-2">
+          Reliable off grid power for construction sites, farms, events,
+          emergency response, and remote operations.
+        </p>
+        <div class="hero-ctas fade-up delay-3">
+          <button
+            class="btn btn-primary"
+            data-scroll-to="contact"
+            data-request-type="Get Pricing"
+          >
+            Get Pricing
+          </button>
+          <button
+            class="btn btn-outline"
+            data-scroll-to="contact"
+            data-request-type="Book a Demo"
+          >
+            Book a Demo
+          </button>
+          <button class="btn btn-ghost" data-scroll-to="resources">
+            Download Brochure
+          </button>
         </div>
       </div>
-    </div>
-    <div class="flip-card reveal" tabindex="0">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12v14M32 12v14M18 26h20v8a10 10 0 01-20 0z"/><line x1="26" y1="44" x2="26" y2="56"/></svg>
-          <h3>Relying on Extension Cords?</h3>
-          <ul class="mini-list"><li>Limited work area</li><li>Safety hazards</li><li>Voltage drop</li><li>Constant relocation</li></ul>
+      <div class="scroll-cue"><span></span></div>
+    </section>
+
+    <div class="divider b red"></div>
+
+    <!-- PERFECT FOR -->
+    <section class="section perfect-for theme-light">
+      <p class="eyebrow reveal">Built for Real Work</p>
+      <h2 class="reveal">
+        Delivers reliable electricity where grid power is unavailable.
+      </h2>
+
+      <div class="icon-row">
+        <div class="icon-item reveal">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M10 44a22 22 0 0144 0z" />
+            <line x1="6" y1="44" x2="58" y2="44" />
+            <line x1="32" y1="18" x2="32" y2="24" />
+          </svg>
+          <p>Construction Sites</p>
         </div>
-        <div class="flip-back">
-          <h4>How We Help</h4>
-          <ul class="mini-list light"><li>Power directly to the work</li><li>No dependence on outlets</li><li>Safer, cleaner setup</li><li>Flexible jobsite mobility</li></ul>
+        <div class="icon-item reveal">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="6" y="24" width="30" height="16" rx="2" />
+            <path d="M36 28h12l8 8v4h-4" />
+            <circle cx="18" cy="44" r="4" />
+            <circle cx="42" cy="44" r="4" />
+          </svg>
+          <p>Farms &amp; Ranches</p>
+        </div>
+        <div class="icon-item reveal">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M42 10l6 6-8 8 4 4-14 14-4-4-8 8-6-6 8-8-4-4 14-14 4 4z" />
+          </svg>
+          <p>Remote Service Crews</p>
+        </div>
+        <div class="icon-item reveal">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polygon points="34,8 14,36 28,36 24,56 48,26 34,26" />
+          </svg>
+          <p>Emergency Response</p>
+        </div>
+        <div class="icon-item reveal">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="14" y="18" width="20" height="28" rx="2" />
+            <circle cx="24" cy="26" r="4" />
+            <circle cx="24" cy="38" r="4" />
+            <path d="M38 22a12 12 0 010 20M44 16a20 20 0 010 32" />
+          </svg>
+          <p>Events &amp; Festivals</p>
+        </div>
+        <div class="icon-item reveal">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M32 12l22 34H10z" />
+            <line x1="32" y1="12" x2="32" y2="46" />
+            <line x1="20" y1="46" x2="24" y2="34" />
+            <line x1="44" y1="46" x2="40" y2="34" />
+          </svg>
+          <p>Recreation &amp; Camping</p>
         </div>
       </div>
-    </div>
-    <div class="flip-card reveal" tabindex="0">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="22"/><line x1="17" y1="17" x2="47" y2="47"/></svg>
-          <h3>No Power Available?</h3>
-          <ul class="mini-list"><li>Remote locations</li><li>No utility connection</li><li>Delayed productivity</li><li>Limited operation</li></ul>
+    </section>
+
+    <div class="divider a ink"></div>
+
+    <!-- CHALLENGE FLIP CARDS -->
+    <section class="section challenges theme-light">
+      <p class="eyebrow reveal">What's Your Biggest Power Challenge?</p>
+      <h2 class="reveal">Tap a card to see how we solve it.</h2>
+
+      <div class="flip-grid">
+        <div class="flip-card reveal" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <svg
+                class="icon-glyph"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="14" y="20" width="24" height="34" rx="2" />
+                <path d="M38 26h6a4 4 0 014 4v18a4 4 0 01-8 0" />
+                <line x1="20" y1="12" x2="20" y2="20" />
+                <line x1="32" y1="12" x2="32" y2="20" />
+              </svg>
+              <h3>Using a Generator?</h3>
+              <ul class="mini-list">
+                <li>Fuel costs add up</li>
+                <li>Frequent maintenance</li>
+                <li>Refueling downtime</li>
+                <li>Noise and exhaust</li>
+              </ul>
+            </div>
+            <div class="flip-back">
+              <h4>How We Help</h4>
+              <ul class="mini-list light">
+                <li>Reduces generator runtime</li>
+                <li>Quiet daytime power</li>
+                <li>Stores energy for after sunset</li>
+                <li>Lowers operating costs</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="flip-back">
-          <h4>How We Help</h4>
-          <ul class="mini-list light"><li>Immediate off grid power</li><li>No infrastructure required</li><li>Portable, self contained</li><li>Ready wherever work takes you</li></ul>
+        <div class="flip-card reveal" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <svg
+                class="icon-glyph"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 12v14M32 12v14M18 26h20v8a10 10 0 01-20 0z" />
+                <line x1="26" y1="44" x2="26" y2="56" />
+              </svg>
+              <h3>Relying on Extension Cords?</h3>
+              <ul class="mini-list">
+                <li>Limited work area</li>
+                <li>Safety hazards</li>
+                <li>Voltage drop</li>
+                <li>Constant relocation</li>
+              </ul>
+            </div>
+            <div class="flip-back">
+              <h4>How We Help</h4>
+              <ul class="mini-list light">
+                <li>Power directly to the work</li>
+                <li>No dependence on outlets</li>
+                <li>Safer, cleaner setup</li>
+                <li>Flexible jobsite mobility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <svg
+                class="icon-glyph"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="32" cy="32" r="22" />
+                <line x1="17" y1="17" x2="47" y2="47" />
+              </svg>
+              <h3>No Power Available?</h3>
+              <ul class="mini-list">
+                <li>Remote locations</li>
+                <li>No utility connection</li>
+                <li>Delayed productivity</li>
+                <li>Limited operation</li>
+              </ul>
+            </div>
+            <div class="flip-back">
+              <h4>How We Help</h4>
+              <ul class="mini-list light">
+                <li>Immediate off grid power</li>
+                <li>No infrastructure required</li>
+                <li>Portable, self contained</li>
+                <li>Ready wherever work takes you</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal" tabindex="0">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <svg
+                class="icon-glyph"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 10h28M18 54h28M20 10c0 12 8 16 12 22-4 6-12 10-12 22M44 10c0 12-8 16-12 22 4 6 12 10 12 22"
+                />
+              </svg>
+              <h3>Waiting for Utility Power?</h3>
+              <ul class="mini-list">
+                <li>Utility delays</li>
+                <li>Connection costs</li>
+                <li>Scheduling issues</li>
+                <li>Lost production time</li>
+              </ul>
+            </div>
+            <div class="flip-back">
+              <h4>How We Help</h4>
+              <ul class="mini-list light">
+                <li>Start working immediately</li>
+                <li>Power available on demand</li>
+                <li>Stay productive while waiting</li>
+                <li>Portable from site to site</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="flip-card reveal" tabindex="0">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h28M18 54h28M20 10c0 12 8 16 12 22-4 6-12 10-12 22M44 10c0 12-8 16-12 22 4 6 12 10 12 22"/></svg>
-          <h3>Waiting for Utility Power?</h3>
-          <ul class="mini-list"><li>Utility delays</li><li>Connection costs</li><li>Scheduling issues</li><li>Lost production time</li></ul>
-        </div>
-        <div class="flip-back">
-          <h4>How We Help</h4>
-          <ul class="mini-list light"><li>Start working immediately</li><li>Power available on demand</li><li>Stay productive while waiting</li><li>Portable from site to site</li></ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <p class="flip-hint">Tap a card to flip it</p>
-</section>
+      <p class="flip-hint">Tap a card to flip it</p>
+    </section>
 
-<div class="divider b orange"></div>
+    <div class="divider b orange"></div>
 
-<!-- WHY CHOOSE -->
-<section class="section why-choose">
-  <p class="eyebrow eyebrow-light reveal">Why Choose a Mobile Power Station?</p>
-  <div class="why-list">
-    <div class="why-row reveal"><h3>Power Where You Need It</h3><p>No utility connection required.</p></div>
-    <div class="why-row reveal"><h3>Quiet Operation</h3><p>No constant generator noise.</p></div>
-    <div class="why-row reveal"><h3>Flexible Charging</h3><p>Solar, shore power, and generator compatible.</p></div>
-    <div class="why-row reveal"><h3>Portable Power</h3><p>Move the power source wherever the work moves.</p></div>
-  </div>
-</section>
-
-<div class="divider a red"></div>
-
-<!-- HOW IT WORKS: PINNED SCROLLYTELLING -->
-<section class="scrolly" id="scrolly">
-  <div class="scrolly-sticky">
-    <p class="eyebrow scrolly-eyebrow">How It Works</p>
-    <div class="scrolly-visual">
-      <div class="flow-track"><div class="flow-fill" id="flowFill"></div></div>
-      <div class="scrolly-steps">
-        <div class="scrolly-step active" data-step="0">
-          <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="14" width="44" height="30" rx="2"/><line x1="10" y1="24" x2="54" y2="24"/><line x1="10" y1="34" x2="54" y2="34"/><line x1="24" y1="14" x2="24" y2="44"/><line x1="38" y1="14" x2="38" y2="44"/><line x1="32" y1="44" x2="32" y2="52"/><line x1="20" y1="52" x2="44" y2="52"/></svg>
-          <h3>Solar Panels</h3>
-          <p>Capturing up to 2000W of live solar power.</p>
+    <!-- WHY CHOOSE -->
+    <section class="section why-choose">
+      <p class="eyebrow eyebrow-light reveal">
+        Why Choose a Mobile Power Station?
+      </p>
+      <div class="why-list">
+        <div class="why-row reveal">
+          <h3>Power Where You Need It</h3>
+          <p>No utility connection required.</p>
         </div>
-        <div class="scrolly-step" data-step="1">
-          <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="32" height="40" rx="3"/><rect x="26" y="10" width="12" height="6" rx="1"/><rect x="20" y="42" width="24" height="10" fill="currentColor" stroke="none"/></svg>
-          <h3>Battery Storage</h3>
-          <p>11.6 kWh stored, ready whenever you need it.</p>
+        <div class="why-row reveal">
+          <h3>Quiet Operation</h3>
+          <p>No constant generator noise.</p>
         </div>
-        <div class="scrolly-step" data-step="2">
-          <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="10"/><path d="M32 8v8M32 48v8M8 32h8M48 32h8M15 15l5.5 5.5M43.5 43.5L49 49M49 15l-5.5 5.5M20.5 43.5L15 49"/></svg>
-          <h3>Inverter System</h3>
-          <p>Samlex 4048SP EVO converts stored energy to usable power.</p>
+        <div class="why-row reveal">
+          <h3>Flexible Charging</h3>
+          <p>Solar, shore power, and generator compatible.</p>
         </div>
-        <div class="scrolly-step" data-step="3">
-          <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="34,8 14,36 28,36 24,56 48,26 34,26"/></svg>
-          <h3>120V &amp; 240V Power</h3>
-          <p>Full household and industrial voltage, on demand.</p>
-        </div>
-        <div class="scrolly-step" data-step="4">
-          <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M42 10l6 6-8 8 4 4-14 14-4-4-8 8-6-6 8-8-4-4 14-14 4 4z"/></svg>
-          <h3>Tools, Equipment &amp; Lighting</h3>
-          <p>Everything your site needs, powered.</p>
+        <div class="why-row reveal">
+          <h3>Portable Power</h3>
+          <p>Move the power source wherever the work moves.</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<div class="divider b ink"></div>
+    <div class="divider a red"></div>
 
-<!-- SYSTEM OVERVIEW: BIG STAT REVEALS -->
-<section class="section specs theme-light">
-  <p class="eyebrow reveal">System Overview</p>
-
-  <div class="big-stat reveal">
-    <span class="big-stat-number" data-count="2000">0</span><span class="big-stat-unit">W</span>
-    <p class="big-stat-label">Solar Input &bull; 4 High Efficiency Panels</p>
-  </div>
-  <div class="big-stat reveal">
-    <span class="big-stat-number" data-count="11.6" data-decimal="1">0</span><span class="big-stat-unit">kWh</span>
-    <p class="big-stat-label">Battery Storage</p>
-  </div>
-  <div class="big-stat reveal">
-    <span class="big-stat-number-static">120V &amp; 240V</span>
-    <p class="big-stat-label">Power Output &bull; Samlex 4048SP EVO Inverter</p>
-  </div>
-
-  <div class="features-layout">
-    <ul class="features-list reveal">
-      <li>Interior &amp; Exterior Lighting</li>
-      <li>Built In Work Bench</li>
-      <li>Shore Power Compatible</li>
-      <li>Generator Compatible</li>
-    </ul>
-
-    <div class="compare-columns reveal">
-      <div class="compare-col">
-        <p class="compare-heading">Generator</p>
-        <p>Fuel Required</p><p>High Noise</p><p>Frequent Maintenance</p><p>High Emissions</p><p>Ongoing Costs</p>
+    <!-- HOW IT WORKS: PINNED SCROLLYTELLING -->
+    <section class="scrolly" id="scrolly">
+      <div class="scrolly-sticky">
+        <p class="eyebrow scrolly-eyebrow">How It Works</p>
+        <div class="scrolly-visual">
+          <div class="flow-track">
+            <div class="flow-fill" id="flowFill"></div>
+          </div>
+          <div class="scrolly-steps">
+            <div class="scrolly-step active" data-step="0">
+              <svg
+                class="flow-icon"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="10" y="14" width="44" height="30" rx="2" />
+                <line x1="10" y1="24" x2="54" y2="24" />
+                <line x1="10" y1="34" x2="54" y2="34" />
+                <line x1="24" y1="14" x2="24" y2="44" />
+                <line x1="38" y1="14" x2="38" y2="44" />
+                <line x1="32" y1="44" x2="32" y2="52" />
+                <line x1="20" y1="52" x2="44" y2="52" />
+              </svg>
+              <h3>Solar Panels</h3>
+              <p>Capturing up to 2000W of live solar power.</p>
+            </div>
+            <div class="scrolly-step" data-step="1">
+              <svg
+                class="flow-icon"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="16" y="16" width="32" height="40" rx="3" />
+                <rect x="26" y="10" width="12" height="6" rx="1" />
+                <rect
+                  x="20"
+                  y="42"
+                  width="24"
+                  height="10"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+              <h3>Battery Storage</h3>
+              <p>11.6 kWh stored, ready whenever you need it.</p>
+            </div>
+            <div class="scrolly-step" data-step="2">
+              <svg
+                class="flow-icon"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="32" cy="32" r="10" />
+                <path
+                  d="M32 8v8M32 48v8M8 32h8M48 32h8M15 15l5.5 5.5M43.5 43.5L49 49M49 15l-5.5 5.5M20.5 43.5L15 49"
+                />
+              </svg>
+              <h3>Inverter System</h3>
+              <p>Samlex 4048SP EVO converts stored energy to usable power.</p>
+            </div>
+            <div class="scrolly-step" data-step="3">
+              <svg
+                class="flow-icon"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon points="34,8 14,36 28,36 24,56 48,26 34,26" />
+              </svg>
+              <h3>120V &amp; 240V Power</h3>
+              <p>Full household and industrial voltage, on demand.</p>
+            </div>
+            <div class="scrolly-step" data-step="4">
+              <svg
+                class="flow-icon"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M42 10l6 6-8 8 4 4-14 14-4-4-8 8-6-6 8-8-4-4 14-14 4 4z"
+                />
+              </svg>
+              <h3>Tools, Equipment &amp; Lighting</h3>
+              <p>Everything your site needs, powered.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="compare-col highlight">
-        <p class="compare-heading">Power Station</p>
-        <p>No Fuel</p><p>Silent</p><p>Low Maintenance</p><p>Zero Emissions</p><p>Minimal Costs</p>
+    </section>
+
+    <div class="divider b ink"></div>
+
+    <!-- SYSTEM OVERVIEW: BIG STAT REVEALS -->
+    <section class="section specs theme-light">
+      <p class="eyebrow reveal">System Overview</p>
+
+      <div class="big-stat reveal">
+        <span class="big-stat-number" data-count="2000">0</span
+        ><span class="big-stat-unit">W</span>
+        <p class="big-stat-label">
+          Solar Input &bull; 4 High Efficiency Panels
+        </p>
       </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider a red"></div>
-
-<!-- REAL WORLD PERFORMANCE -->
-<section class="section performance">
-  <p class="eyebrow reveal">Real World Performance</p>
-  <h2 class="reveal">When the sun is shining</h2>
-  <p class="section-intro reveal">Up to 2000 watts of live solar power while simultaneously charging batteries and supporting connected loads.</p>
-
-  <div class="perf-row">
-    <div class="perf-block reveal">
-      <h4>What This Means</h4>
-      <ul class="mini-list"><li>Reduced battery drain</li><li>Extended runtime</li><li>Continuous charging while working</li><li>Improved daily productivity</li></ul>
-    </div>
-    <div class="perf-block reveal">
-      <h4>Typical Performance</h4>
-      <p class="perf-sub"><strong>Medium Loads (300&ndash;800W)</strong><br>Operates continuously during daylight.</p>
-      <p class="perf-sub"><strong>Heavy Loads (Saws, Compressors)</strong><br>Solar offsets a significant portion of demand.</p>
-    </div>
-  </div>
-
-  <h2 class="reveal runtime-heading">Evening &amp; Cloudy Conditions</h2>
-  <div class="runtime-estimator reveal">
-    <div class="runtime-tabs">
-      <button class="runtime-tab active" data-runtime="light">Light Loads</button>
-      <button class="runtime-tab" data-runtime="moderate">Moderate Loads</button>
-      <button class="runtime-tab" data-runtime="heavy">Heavy Loads</button>
-    </div>
-    <div class="runtime-display">
-      <div class="runtime-panel active" data-panel="light"><p class="runtime-desc">Lights, electronics, battery charging</p><p class="runtime-number">1&ndash;2 days</p></div>
-      <div class="runtime-panel" data-panel="moderate"><p class="runtime-desc">Intermittent tool use</p><p class="runtime-number">~1 workday</p></div>
-      <div class="runtime-panel" data-panel="heavy"><p class="runtime-desc">Continuous tool operation</p><p class="runtime-number">3&ndash;4 hours</p></div>
-    </div>
-  </div>
-  <p class="disclaimer">Performance and runtime figures are estimates from system documentation.</p>
-</section>
-
-<div class="divider b orange"></div>
-
-<!-- IDEAL APPLICATIONS: HORIZONTAL SWIPE GALLERY -->
-<section class="applications theme-light">
-  <p class="eyebrow reveal app-heading">Ideal Applications</p>
-  <div class="app-scroll">
-    <div class="app-card reveal grad-1"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 44a22 22 0 0144 0z"/><line x1="6" y1="44" x2="58" y2="44"/><line x1="32" y1="18" x2="32" y2="24"/></svg><h3>Construction</h3><p>Temporary site power before utility connections.</p></div>
-    <div class="app-card reveal grad-2"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 50C14 26 30 12 50 12c0 20-14 36-38 38z"/><line x1="14" y1="50" x2="34" y2="30"/></svg><h3>Agriculture</h3><p>Field operations, pumps, irrigation, and repair.</p></div>
-    <div class="app-card reveal grad-1"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M42 10l6 6-8 8 4 4-14 14-4-4-8 8-6-6 8-8-4-4 14-14 4 4z"/></svg><h3>Remote Crews</h3><p>Portable power wherever jobs take you.</p></div>
-    <div class="app-card reveal grad-2"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="18" width="20" height="28" rx="2"/><circle cx="24" cy="26" r="4"/><circle cx="24" cy="38" r="4"/><path d="M38 22a12 12 0 010 20M44 16a20 20 0 010 32"/></svg><h3>Events &amp; Festivals</h3><p>Clean, quiet event power.</p></div>
-    <div class="app-card reveal grad-1"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M32 8l20 8v14c0 14-8 24-20 26-12-2-20-12-20-26V16z"/><line x1="32" y1="24" x2="32" y2="36"/><line x1="26" y1="30" x2="38" y2="30"/></svg><h3>Emergency Response</h3><p>Reliable backup power when it matters most.</p></div>
-    <div class="app-card reveal grad-2"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 46l16-22 10 12 8-10 18 20z"/><circle cx="46" cy="16" r="5"/></svg><h3>Recreation</h3><p>Campgrounds, hunting camps, remote adventures.</p></div>
-  </div>
-</section>
-
-<div class="divider a ink"></div>
-
-<!-- BATTERY CARE + WARRANTY -->
-<section class="section care-warranty">
-  <div class="care-warranty-grid">
-    <div class="glass-panel reveal">
-      <span class="care-flag">First Year Free</span>
-      <p class="eyebrow">Battery Care Program</p>
-      <h3>Protect Your Investment</h3>
-      <p class="care-price">Starting at $249&ndash;$399 / Year</p>
-      <ul class="mini-list">
-        <li>Fall Battery Removal</li><li>Climate Controlled Storage</li><li>Monthly Charge Maintenance</li>
-        <li>Spring Health Inspection</li><li>Reinstallation</li><li>Full System Test</li>
-      </ul>
-    </div>
-    <div class="glass-panel reveal center">
-      <p class="eyebrow">Warranty</p>
-      <h3>Peace of Mind Included</h3>
-      <div class="warranty-number" data-count="5">0</div>
-      <p class="warranty-label">Year Pioneer Workmanship Warranty</p>
-      <p class="warranty-note">Manufacturer warranties apply to all installed components.</p>
-    </div>
-  </div>
-</section>
-
-<div class="divider b red"></div>
-
-<!-- CTA BAND -->
-<section class="cta-band">
-  <h2 class="reveal">See the Mobile Power Station in person at Flaman Saskatoon HWY 16.</h2>
-  <div class="hero-ctas">
-    <button class="btn btn-primary" data-scroll-to="contact" data-request-type="Get Pricing">Get Pricing</button>
-    <button class="btn btn-outline-light" data-scroll-to="contact" data-request-type="Book a Demo">Book a Demo</button>
-  </div>
-</section>
-
-<div class="divider a ink"></div>
-
-<!-- FAQ -->
-<section class="section faq theme-light">
-  <p class="eyebrow reveal">Frequently Asked Questions</p>
-  <div class="faq-list">
-    <div class="faq-item reveal">
-      <button class="faq-question">What happens when it's cloudy?<span class="faq-toggle">+</span></button>
-      <div class="faq-answer"><p>The battery storage system continues supplying power and generator backup can be connected when needed.</p></div>
-    </div>
-    <div class="faq-item reveal">
-      <button class="faq-question">Can I recharge it at home, the shop, or yard?<span class="faq-toggle">+</span></button>
-      <div class="faq-answer"><p>Yes. The system is shore power compatible.</p></div>
-    </div>
-    <div class="faq-item reveal">
-      <button class="faq-question">Can I connect a generator?<span class="faq-toggle">+</span></button>
-      <div class="faq-answer"><p>Yes. The trailer can operate with generator support and hybrid charging.</p></div>
-    </div>
-    <div class="faq-item reveal">
-      <button class="faq-question">What can it power?<span class="faq-toggle">+</span></button>
-      <div class="faq-answer"><p>Tools, lighting, battery chargers, equipment, communications systems, and many remote power applications.</p></div>
-    </div>
-    <div class="faq-item reveal">
-      <button class="faq-question">Can I move it between job sites?<span class="faq-toggle">+</span></button>
-      <div class="faq-answer"><p>Absolutely. The system is designed for portable deployment wherever power is required.</p></div>
-    </div>
-  </div>
-</section>
-
-<div class="divider b orange"></div>
-
-<!-- DOWNLOAD RESOURCES -->
-<section class="section resources" id="resources">
-  <p class="eyebrow eyebrow-light reveal">Download Resources</p>
-  <div class="icon-row">
-    <a href="#" class="icon-item reveal"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h20l10 10v38H18z"/><path d="M38 8v10h10"/><line x1="24" y1="32" x2="42" y2="32"/><line x1="24" y1="40" x2="42" y2="40"/></svg><p>Product Brochure</p></a>
-    <a href="#" class="icon-item reveal"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="14" width="34" height="36" rx="3"/><polygon points="20,24 20,40 34,32" fill="currentColor" stroke="none"/><path d="M42 26l14-8v28l-14-8"/></svg><p>Product Video</p></a>
-    <a href="#" class="icon-item reveal"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="12" width="36" height="44" rx="3"/><rect x="24" y="8" width="16" height="8" rx="2"/><line x1="22" y1="28" x2="42" y2="28"/><line x1="22" y1="38" x2="42" y2="38"/><line x1="22" y1="48" x2="34" y2="48"/></svg><p>System Specifications</p></a>
-    <button class="icon-item reveal" data-scroll-to="contact"><svg class="icon-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 50l4-14 26-26 10 10-26 26z"/><line x1="34" y1="14" x2="44" y2="24"/></svg><p>Request a Custom Quote</p></button>
-  </div>
-</section>
-
-<div class="divider a red"></div>
-
-<!-- CONTACT FORM -->
-<section class="section contact theme-light" id="contact">
-  <p class="eyebrow reveal">Ready to Bring Power Anywhere?</p>
-  <h2 class="reveal">Fill out the form below and our team will help determine if the Mobile Power Station is right for your application.</h2>
-
-  <form id="trailerForm" class="contact-form reveal">
-    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-    <input type="hidden" name="subject" value="New Mobile Power Station Inquiry">
-    <input type="hidden" name="request_type" id="requestTypeField" value="Get Pricing">
-    <input type="checkbox" name="botcheck" style="display:none">
-
-    <div class="form-grid">
-      <div class="form-row"><label for="name">Name</label><input type="text" id="name" name="name" required></div>
-      <div class="form-row"><label for="company">Company</label><input type="text" id="company" name="company"></div>
-      <div class="form-row"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone"></div>
-      <div class="form-row"><label for="email">Email Address</label><input type="email" id="email" name="email" required></div>
-      <div class="form-row"><label for="location">Location</label><input type="text" id="location" name="location"></div>
-      <div class="form-row">
-        <label for="application">Primary Application</label>
-        <select id="application" name="primary_application">
-          <option value="">Select one</option>
-          <option>Construction</option><option>Agriculture</option><option>Remote Service Crews</option>
-          <option>Events &amp; Festivals</option><option>Emergency Response</option><option>Recreation</option><option>Other</option>
-        </select>
+      <div class="big-stat reveal">
+        <span class="big-stat-number" data-count="11.6" data-decimal="1">0</span
+        ><span class="big-stat-unit">kWh</span>
+        <p class="big-stat-label">Battery Storage</p>
       </div>
+      <div class="big-stat reveal">
+        <span class="big-stat-number-static">120V &amp; 240V</span>
+        <p class="big-stat-label">
+          Power Output &bull; Samlex 4048SP EVO Inverter
+        </p>
+      </div>
+
+      <div class="features-layout">
+        <ul class="features-list reveal">
+          <li>Interior &amp; Exterior Lighting</li>
+          <li>Built In Work Bench</li>
+          <li>Shore Power Compatible</li>
+          <li>Generator Compatible</li>
+        </ul>
+
+        <div class="compare-columns reveal">
+          <div class="compare-col">
+            <p class="compare-heading">Generator</p>
+            <p>Fuel Required</p>
+            <p>High Noise</p>
+            <p>Frequent Maintenance</p>
+            <p>High Emissions</p>
+            <p>Ongoing Costs</p>
+          </div>
+          <div class="compare-col highlight">
+            <p class="compare-heading">Power Station</p>
+            <p>No Fuel</p>
+            <p>Silent</p>
+            <p>Low Maintenance</p>
+            <p>Zero Emissions</p>
+            <p>Minimal Costs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider a red"></div>
+
+    <!-- REAL WORLD PERFORMANCE -->
+    <section class="section performance">
+      <p class="eyebrow reveal">Real World Performance</p>
+      <h2 class="reveal">When the sun is shining</h2>
+      <p class="section-intro reveal">
+        Up to 2000 watts of live solar power while simultaneously charging
+        batteries and supporting connected loads.
+      </p>
+
+      <div class="perf-row">
+        <div class="perf-block reveal">
+          <h4>What This Means</h4>
+          <ul class="mini-list">
+            <li>Reduced battery drain</li>
+            <li>Extended runtime</li>
+            <li>Continuous charging while working</li>
+            <li>Improved daily productivity</li>
+          </ul>
+        </div>
+        <div class="perf-block reveal">
+          <h4>Typical Performance</h4>
+          <p class="perf-sub">
+            <strong>Medium Loads (300&ndash;800W)</strong><br />Operates
+            continuously during daylight.
+          </p>
+          <p class="perf-sub">
+            <strong>Heavy Loads (Saws, Compressors)</strong><br />Solar offsets
+            a significant portion of demand.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="reveal runtime-heading">Evening &amp; Cloudy Conditions</h2>
+      <div class="runtime-estimator reveal">
+        <div class="runtime-tabs">
+          <button class="runtime-tab active" data-runtime="light">
+            Light Loads
+          </button>
+          <button class="runtime-tab" data-runtime="moderate">
+            Moderate Loads
+          </button>
+          <button class="runtime-tab" data-runtime="heavy">Heavy Loads</button>
+        </div>
+        <div class="runtime-display">
+          <div class="runtime-panel active" data-panel="light">
+            <p class="runtime-desc">Lights, electronics, battery charging</p>
+            <p class="runtime-number">1&ndash;2 days</p>
+          </div>
+          <div class="runtime-panel" data-panel="moderate">
+            <p class="runtime-desc">Intermittent tool use</p>
+            <p class="runtime-number">~1 workday</p>
+          </div>
+          <div class="runtime-panel" data-panel="heavy">
+            <p class="runtime-desc">Continuous tool operation</p>
+            <p class="runtime-number">3&ndash;4 hours</p>
+          </div>
+        </div>
+      </div>
+      <p class="disclaimer">
+        Performance and runtime figures are estimates from system documentation.
+      </p>
+    </section>
+
+    <div class="divider b orange"></div>
+
+    <!-- IDEAL APPLICATIONS: HORIZONTAL SWIPE GALLERY -->
+    <section class="applications theme-light">
+      <p class="eyebrow reveal app-heading">Ideal Applications</p>
+      <div class="app-scroll">
+        <div class="app-card reveal grad-1">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M10 44a22 22 0 0144 0z" />
+            <line x1="6" y1="44" x2="58" y2="44" />
+            <line x1="32" y1="18" x2="32" y2="24" />
+          </svg>
+          <h3>Construction</h3>
+          <p>Temporary site power before utility connections.</p>
+        </div>
+        <div class="app-card reveal grad-2">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M14 50C14 26 30 12 50 12c0 20-14 36-38 38z" />
+            <line x1="14" y1="50" x2="34" y2="30" />
+          </svg>
+          <h3>Agriculture</h3>
+          <p>Field operations, pumps, irrigation, and repair.</p>
+        </div>
+        <div class="app-card reveal grad-1">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M42 10l6 6-8 8 4 4-14 14-4-4-8 8-6-6 8-8-4-4 14-14 4 4z" />
+          </svg>
+          <h3>Remote Crews</h3>
+          <p>Portable power wherever jobs take you.</p>
+        </div>
+        <div class="app-card reveal grad-2">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="14" y="18" width="20" height="28" rx="2" />
+            <circle cx="24" cy="26" r="4" />
+            <circle cx="24" cy="38" r="4" />
+            <path d="M38 22a12 12 0 010 20M44 16a20 20 0 010 32" />
+          </svg>
+          <h3>Events &amp; Festivals</h3>
+          <p>Clean, quiet event power.</p>
+        </div>
+        <div class="app-card reveal grad-1">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M32 8l20 8v14c0 14-8 24-20 26-12-2-20-12-20-26V16z" />
+            <line x1="32" y1="24" x2="32" y2="36" />
+            <line x1="26" y1="30" x2="38" y2="30" />
+          </svg>
+          <h3>Emergency Response</h3>
+          <p>Reliable backup power when it matters most.</p>
+        </div>
+        <div class="app-card reveal grad-2">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M6 46l16-22 10 12 8-10 18 20z" />
+            <circle cx="46" cy="16" r="5" />
+          </svg>
+          <h3>Recreation</h3>
+          <p>Campgrounds, hunting camps, remote adventures.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider a ink"></div>
+
+    <!-- BATTERY CARE + WARRANTY -->
+    <section class="section care-warranty">
+      <div class="care-warranty-grid">
+        <div class="glass-panel reveal">
+          <span class="care-flag">First Year Free</span>
+          <p class="eyebrow">Battery Care Program</p>
+          <h3>Protect Your Investment</h3>
+          <p class="care-price">Starting at $249&ndash;$399 / Year</p>
+          <ul class="mini-list">
+            <li>Fall Battery Removal</li>
+            <li>Climate Controlled Storage</li>
+            <li>Monthly Charge Maintenance</li>
+            <li>Spring Health Inspection</li>
+            <li>Reinstallation</li>
+            <li>Full System Test</li>
+          </ul>
+        </div>
+        <div class="glass-panel reveal center">
+          <p class="eyebrow">Warranty</p>
+          <h3>Peace of Mind Included</h3>
+          <div class="warranty-number" data-count="5">0</div>
+          <p class="warranty-label">Year Pioneer Workmanship Warranty</p>
+          <p class="warranty-note">
+            Manufacturer warranties apply to all installed components.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider b red"></div>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <h2 class="reveal">
+        See the Mobile Power Station in person at Flaman Saskatoon HWY 16.
+      </h2>
+      <div class="hero-ctas">
+        <button
+          class="btn btn-primary"
+          data-scroll-to="contact"
+          data-request-type="Get Pricing"
+        >
+          Get Pricing
+        </button>
+        <button
+          class="btn btn-outline-light"
+          data-scroll-to="contact"
+          data-request-type="Book a Demo"
+        >
+          Book a Demo
+        </button>
+      </div>
+    </section>
+
+    <div class="divider a ink"></div>
+
+    <!-- FAQ -->
+    <section class="section faq theme-light">
+      <p class="eyebrow reveal">Frequently Asked Questions</p>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            What happens when it's cloudy?<span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              The battery storage system continues supplying power and generator
+              backup can be connected when needed.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Can I recharge it at home, the shop, or yard?<span
+              class="faq-toggle"
+              >+</span
+            >
+          </button>
+          <div class="faq-answer">
+            <p>Yes. The system is shore power compatible.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Can I connect a generator?<span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes. The trailer can operate with generator support and hybrid
+              charging.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            What can it power?<span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Tools, lighting, battery chargers, equipment, communications
+              systems, and many remote power applications.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Can I move it between job sites?<span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolutely. The system is designed for portable deployment
+              wherever power is required.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider b orange"></div>
+
+    <!-- DOWNLOAD RESOURCES -->
+    <section class="section resources" id="resources">
+      <p class="eyebrow eyebrow-light reveal">Download Resources</p>
+      <div class="icon-row">
+        <a href="#" class="icon-item reveal"
+          ><svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 8h20l10 10v38H18z" />
+            <path d="M38 8v10h10" />
+            <line x1="24" y1="32" x2="42" y2="32" />
+            <line x1="24" y1="40" x2="42" y2="40" />
+          </svg>
+          <p>Product Brochure</p></a
+        >
+        <a href="#" class="icon-item reveal"
+          ><svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="8" y="14" width="34" height="36" rx="3" />
+            <polygon
+              points="20,24 20,40 34,32"
+              fill="currentColor"
+              stroke="none"
+            />
+            <path d="M42 26l14-8v28l-14-8" />
+          </svg>
+          <p>Product Video</p></a
+        >
+        <a href="#" class="icon-item reveal"
+          ><svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="14" y="12" width="36" height="44" rx="3" />
+            <rect x="24" y="8" width="16" height="8" rx="2" />
+            <line x1="22" y1="28" x2="42" y2="28" />
+            <line x1="22" y1="38" x2="42" y2="38" />
+            <line x1="22" y1="48" x2="34" y2="48" />
+          </svg>
+          <p>System Specifications</p></a
+        >
+        <button class="icon-item reveal" data-scroll-to="contact">
+          <svg
+            class="icon-glyph"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M14 50l4-14 26-26 10 10-26 26z" />
+            <line x1="34" y1="14" x2="44" y2="24" />
+          </svg>
+          <p>Request a Custom Quote</p>
+        </button>
+      </div>
+    </section>
+
+    <div class="divider a red"></div>
+
+    <!-- CONTACT FORM -->
+    <section class="section contact theme-light" id="contact">
+      <p class="eyebrow reveal">Ready to Bring Power Anywhere?</p>
+      <h2 class="reveal">
+        Fill out the form below and our team will help determine if the Mobile
+        Power Station is right for your application.
+      </h2>
+
+      <form id="trailerForm" class="contact-form reveal">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+        <input
+          type="hidden"
+          name="subject"
+          value="New Mobile Power Station Inquiry"
+        />
+        <input
+          type="hidden"
+          name="request_type"
+          id="requestTypeField"
+          value="Get Pricing"
+        />
+        <input type="checkbox" name="botcheck" style="display: none" />
+
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="name">Name</label
+            ><input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-row">
+            <label for="company">Company</label
+            ><input type="text" id="company" name="company" />
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone Number</label
+            ><input type="tel" id="phone" name="phone" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email Address</label
+            ><input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-row">
+            <label for="location">Location</label
+            ><input type="text" id="location" name="location" />
+          </div>
+          <div class="form-row">
+            <label for="application">Primary Application</label>
+            <select id="application" name="primary_application">
+              <option value="">Select one</option>
+              <option>Construction</option>
+              <option>Agriculture</option>
+              <option>Remote Service Crews</option>
+              <option>Events &amp; Festivals</option>
+              <option>Emergency Response</option>
+              <option>Recreation</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Comments</label
+          ><textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="form-submit-row">
+          <button
+            type="submit"
+            class="btn btn-primary"
+            data-request-type="Get Pricing"
+          >
+            Get Pricing
+          </button>
+          <button
+            type="submit"
+            class="btn btn-outline"
+            data-request-type="Book a Demonstration"
+          >
+            Book a Demonstration
+          </button>
+        </div>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </section>
+
+    <div class="divider b ink"></div>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <h2 class="final-cta-title reveal">
+        WORK HARD.<br />POWER SMART.<br />STAY MOBILE.
+      </h2>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-brands">
+        <div class="logo pioneer-logo small">
+          <span class="logo-mark"></span
+          ><span class="logo-text"
+            >PIONEER<br /><small>SOLAR &amp; RENEWABLES</small></span
+          >
+        </div>
+        <div class="logo flaman-logo small">FLAMAN</div>
+      </div>
+      <p class="footer-product">
+        Mobile Power Station &nbsp;|&nbsp; Self Contained Power for Work and
+        Play
+      </p>
+      <p class="footer-contact">
+        1 (833) 384-7657 &nbsp;|&nbsp; pioneersolarenergy.com
+      </p>
+      <div class="footer-links">
+        <button class="footer-link" data-scroll-to="resources">
+          Download Brochure
+        </button>
+        <button
+          class="footer-link"
+          data-scroll-to="contact"
+          data-request-type="Book a Demo"
+        >
+          Book a Demo
+        </button>
+        <button
+          class="footer-link"
+          data-scroll-to="contact"
+          data-request-type="Get Pricing"
+        >
+          Request Pricing
+        </button>
+      </div>
+      <p class="footer-note">
+        Designed and supported by Flaman &amp; Pioneer Solar &amp; Renewables
+      </p>
+    </footer>
+
+    <div class="sticky-cta">
+      <button
+        class="btn btn-primary"
+        data-scroll-to="contact"
+        data-request-type="Get Pricing"
+      >
+        Get Pricing
+      </button>
+      <button
+        class="btn btn-outline"
+        data-scroll-to="contact"
+        data-request-type="Book a Demo"
+      >
+        Book a Demo
+      </button>
     </div>
 
-    <div class="form-row"><label for="message">Comments</label><textarea id="message" name="message" rows="4"></textarea></div>
-
-    <div class="form-submit-row">
-      <button type="submit" class="btn btn-primary" data-request-type="Get Pricing">Get Pricing</button>
-      <button type="submit" class="btn btn-outline" data-request-type="Book a Demonstration">Book a Demonstration</button>
-    </div>
-    <p class="form-status" id="formStatus"></p>
-  </form>
-</section>
-
-<div class="divider b ink"></div>
-
-<!-- FINAL CTA -->
-<section class="final-cta">
-  <h2 class="final-cta-title reveal">WORK HARD.<br>POWER SMART.<br>STAY MOBILE.</h2>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-brands">
-    <div class="logo pioneer-logo small"><span class="logo-mark"></span><span class="logo-text">PIONEER<br><small>SOLAR &amp; RENEWABLES</small></span></div>
-    <div class="logo flaman-logo small">FLAMAN</div>
-  </div>
-  <p class="footer-product">Mobile Power Station &nbsp;|&nbsp; Self Contained Power for Work and Play</p>
-  <p class="footer-contact">1 (833) 384-7657 &nbsp;|&nbsp; pioneersolarenergy.com</p>
-  <div class="footer-links">
-    <button class="footer-link" data-scroll-to="resources">Download Brochure</button>
-    <button class="footer-link" data-scroll-to="contact" data-request-type="Book a Demo">Book a Demo</button>
-    <button class="footer-link" data-scroll-to="contact" data-request-type="Get Pricing">Request Pricing</button>
-  </div>
-  <p class="footer-note">Designed and supported by Flaman &amp; Pioneer Solar &amp; Renewables</p>
-</footer>
-
-<div class="sticky-cta">
-  <button class="btn btn-primary" data-scroll-to="contact" data-request-type="Get Pricing">Get Pricing</button>
-  <button class="btn btn-outline" data-scroll-to="contact" data-request-type="Book a Demo">Book a Demo</button>
-</div>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
