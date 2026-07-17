@@ -393,6 +393,26 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 .sticky-cta.visible { display: flex; }
 .sticky-cta .btn { padding: 11px 16px; font-size: 0.82rem; flex: 1; max-width: 200px; }
 
+.resources .icon-row {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.resources .eyebrow {
+  font-size: 2.6rem; letter-spacing: 4px; font-weight: 800;
+}
+
+.faq .eyebrow {
+  font-size: 2.6rem; letter-spacing: 4px; font-weight: 800;
+}
+
+.contact .eyebrow {
+  font-size: 2.6rem; letter-spacing: 4px; font-weight: 800;
+}
+
+.contact h2 {
+  font-size: 1.2rem; letter-spacing: 1px; font-weight: 200;
+}
+
 @media (max-width: 720px) {
   .features-layout { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
