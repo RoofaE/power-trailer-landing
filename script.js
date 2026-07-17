@@ -108,6 +108,7 @@ if (stickyCta && hero) {
 /* ===== SCROLLYTELLING: HOW IT WORKS (the one signature effect) ===== */
 var scrollyEl = document.getElementById('scrolly');
 var scrollySteps = document.querySelectorAll('.scrolly-step');
+var scrollyCounterEl = document.getElementById('scrollyCount');
 
 var ticking = false;
 
@@ -133,6 +134,8 @@ function updateScrolly() {
   scrollySteps.forEach(function (step, i) {
     step.classList.toggle('active', i === stepIndex);
   });
+
+  if (scrollyCounterEl) scrollyCounterEl.textContent = stepIndex + 1;
 }
 
 window.addEventListener('scroll', onScroll, { passive: true });
