@@ -195,6 +195,9 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
   .why-row:nth-child(2) { margin-left: 16px; }
   .why-row:nth-child(3) { margin-left: 32px; }
   .why-row:nth-child(4) { margin-left: 48px; }
+  .app-card { gap: 14px; }
+  .app-card .icon-badge { width: 40px; height: 40px; }
+  .app-card .icon-glyph { width: 20px; height: 20px; }
 }
 .why-row h3 { font-size: 1rem; min-width: 220px; font-weight: 300; }
 .why-row p { color: var(--muted); margin: 0; }
@@ -296,13 +299,43 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 .applications { padding: 80px 0; }
 .applications .eyebrow { font-size: clamp(2.4rem, 8vw, 5rem); letter-spacing: 2px; font-weight: 800;}
 .app-heading { padding: 0 6vw; max-width: 1080px; margin-left: auto; margin-right: auto; }
-.app-scroll { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 24px 6vw 10px; scrollbar-width: none; }
+.app-scroll { display: flex; flex-direction: column; max-width: 1080px; margin: 24px auto 0; padding: 0 6vw; }
 .app-scroll::-webkit-scrollbar { display: none; }
-.app-card { scroll-snap-align: start; flex: 0 0 220px; border-radius: 8px; padding: 24px; background: var(--panel-light); border: 1px solid rgba(255,255,255,0.06); color: var(--white); --muted: #9BA3AE; }
-.app-card .icon-glyph { width: 30px; height: 30px; color: var(--orange); }
-.app-card span { font-size: 1.8rem; }
-.app-card h3 { font-size: 1rem; margin: 12px 0 6px; }
-.app-card p { color: var(--muted); margin: 0; font-size: 0.88rem; }
+.app-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--hairline);
+  transition: padding-left 0.25s ease;
+}
+.app-card:hover { padding-left: 8px; }
+
+.app-card .icon-badge {
+  width: 48px; height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(247,148,29,0.12);
+  display: flex; align-items: center; justify-content: center;
+}
+.app-card.grad-2 .icon-badge { background: rgba(200,16,46,0.12); }
+.app-card .icon-glyph { width: 24px; height: 24px; color: var(--orange); margin: 0; }
+.app-card.grad-2 .icon-glyph { color: var(--red); }
+
+.app-card h3 {
+  font-family: var(--body) !important;
+  font-weight: 10 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  font-size: 1.05rem;
+  margin: 0 0 4px;
+}
+
+.app-card p {
+  color: var(--ink);
+  margin: 0;
+  font-size: 0.9rem;
+}
 
 /* Battery care + warranty - flat panels, no glass effect */
 .care-warranty { background: var(--ink); }
