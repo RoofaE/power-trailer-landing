@@ -202,12 +202,12 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 /* ===== SCROLLYTELLING: HOW IT WORKS (the one signature moment) ===== */
 .scrolly { position: relative; height: 450vh; background: var(--panel); }
 .scrolly-sticky { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; padding: 0 6vw; }
-.scrolly-title { font-size: clamp(2.4rem, 8vw, 5rem); color: var(--red); text-align: center; position: absolute; top: 50px; left: 50%; transform: translateX(-50%); width: 100%; }
+.scrolly-title { font-size: clamp(2.4rem, 8vw, 5rem); color: var(--red); text-align: center; position: absolute; top: 50px; left: 50%; transform: translateX(-50%); width: 100%; font-weight: 300;}
 .scrolly-counter {
-  position: absolute; top: 120px; left: 50%; transform: translateX(-50%);
+  position: absolute; top: 150px; left: 50%; transform: translateX(-50%);
   font-family: var(--label); letter-spacing: 3px; color: var(--orange); font-size: 1rem;
 }
-.scrolly-visual { width: 100%; max-width: 620px; margin-top: 60px; }
+.scrolly-visual { width: 100%; max-width: 620px; margin-top: 90px; }
 .scrolly-steps { position: relative; height: 480px; width: 100%; }
 .scrolly-step {
   position: absolute; inset: 0;
@@ -218,7 +218,7 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 .scrolly-step.active { opacity: 1; transform: translateY(0); }
 .scrolly-image {
   width: 100%;
-  max-width: 600px;
+  max-width: 420px;
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
@@ -234,6 +234,7 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 
 /* ===== BIG STAT REVEALS ===== */
 .specs { text-align: center; }
+.specs .eyebrow {font-size: clamp(2.4rem, 8vw, 5rem);; letter-spacing: 2px; font-weight: 800;}
 .big-stat { margin: 56px 0; }
 .big-stat-number { font-family: var(--display); font-size: clamp(3rem, 9vw, 5.5rem); color: var(--red); }
 .big-stat-number-static { font-family: var(--display); font-size: clamp(2rem, 6vw, 3.5rem); color: var(--red); }
@@ -272,6 +273,7 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 
 /* Performance */
 .performance { background: var(--ink); }
+.performance .eyebrow { font-size: clamp(2.4rem, 8vw, 5rem); letter-spacing: 2px; font-weight: 800;}
 .perf-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 26px; margin-top: 24px; }
 .perf-block h4 { font-family: var(--label); color: var(--orange); margin-bottom: 12px; letter-spacing: 1px; }
 .perf-sub { font-size: 0.92rem; color: var(--muted); margin: 0 0 12px; }
@@ -292,6 +294,7 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 
 /* Applications: simple horizontal scroll, flat panels */
 .applications { padding: 80px 0; }
+.applications .eyebrow { font-size: clamp(2.4rem, 8vw, 5rem); letter-spacing: 2px; font-weight: 800;}
 .app-heading { padding: 0 6vw; max-width: 1080px; margin-left: auto; margin-right: auto; }
 .app-scroll { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 24px 6vw 10px; scrollbar-width: none; }
 .app-scroll::-webkit-scrollbar { display: none; }
