@@ -111,8 +111,8 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 .section h2 { font-size: clamp(1.5rem, 3.2vw, 2.2rem); margin: 6px 0 20px; max-width: 760px; }
 
 /* Perfect for / resources - simple icon rows */
-.icon-row { display: flex; flex-wrap: wrap; gap: 36px; margin-top: 32px; }
-.icon-item { text-align: center; background: none; border: none; color: inherit; font-family: inherit; cursor: pointer; padding: 0; transition: transform 0.2s ease; text-decoration: none; }
+.icon-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px 24px; margin-top: 40px; }
+.icon-item { text-align: center; background: none; border: none; color: inherit; font-family: inherit; cursor: pointer; padding: 0; transition: transform 0.2s ease; text-decoration: none; cursor: default;}
 .icon-item:hover { transform: translateY(-3px); }
 .icon-item span, .icon-item .icon-glyph { display: block; margin: 0 auto 10px; }
 .icon-item .icon-glyph { width: 40px; height: 40px; color: var(--orange); }
@@ -206,6 +206,8 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 .perf-sub { font-size: 0.92rem; color: var(--muted); margin: 0 0 12px; }
 .perf-sub strong { color: var(--white); }
 .runtime-heading { margin-top: 56px; }
+.perfect-for h2 { font-size: clamp(1rem, 4vw, 1.8rem); font-weight: 800; letter-spacing: 0.6px; }
+.perfect-for .eyebrow { font-size: 1.6rem; letter-spacing: 4px; font-weight: 800; }
 
 .runtime-estimator { max-width: 560px; margin-top: 18px; }
 .runtime-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
@@ -303,8 +305,8 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
   .app-card { flex-basis: 200px; }
 }
 
-@media (min-width: 900px){
+/* @media (min-width: 900px){
   .flip-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-}
+} */
