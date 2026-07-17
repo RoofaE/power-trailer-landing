@@ -152,11 +152,11 @@ form.addEventListener('submit', function (e) {
   var object = Object.fromEntries(formData);
   var json = JSON.stringify(object);
 
-  fetch('https://api.web3forms.com/submit', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-    body: json
-  })
+  fetch('/api/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: json
+  })
     .then(function (response) { return response.json(); })
     .then(function (result) {
       if (result.success) {
