@@ -164,7 +164,7 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
   .why-row:nth-child(3) { margin-left: 32px; }
   .why-row:nth-child(4) { margin-left: 48px; }
 }
-.why-row h3 { font-size: 1.1rem; min-width: 220px; }
+.why-row h3 { font-size: 1rem; min-width: 220px; font-weight: 300;}
 .why-row p { color: var(--muted); margin: 0; }
 
 /* ===== SCROLLYTELLING: HOW IT WORKS (the one signature moment) ===== */
