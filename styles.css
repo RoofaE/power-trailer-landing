@@ -120,7 +120,7 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 
 /* Flip cards - flat, calm */
 .challenges { max-width: 1080px; }
-.flip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+.flip-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 .flip-card { -webkit-perspective: 1200px; perspective: 1200px; height: 300px; cursor: pointer; }
 .flip-inner { position: relative; width: 100%; height: 100%; transition: transform 0.55s ease; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; }
 .flip-card.flipped .flip-inner { -webkit-transform: rotateY(180deg); transform: rotateY(180deg); }
@@ -303,6 +303,53 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
   .scrolly-image { height: 170px; }
   .icon-row { gap: 26px; justify-content: center; }
   .app-card { flex-basis: 200px; }
+}
+
+.challenges .eyebrow {
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+
+@media (min-width: 700px) {
+  .flip-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 400px){
+  .flip-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Gold flip for cards */
+.flip-back {
+  justify-content: flex-start;
+  padding-top: 15px;
+  background: linear-gradient(135deg, #C97A0D, #FFD873 40%, #F7941D 70%, #FFE9B0);
+  background-size: 250% 250%;
+  animation: goldShine 4s ease-in-out infinite alternate;
+  color: #241705;
+  box-shadow: 0 0 30px rgba(247, 148, 29, 0.4);
+}
+.flip-back h4 {
+  color: #241705;
+}
+.flip-back .icon-glyph {
+  color: #241705;
+}
+.flip-back .mini-list.light li {
+  color: #241705;
+}
+.flip-back .mini-list.light li::before {
+  color: #5A3D10;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-back {
+    animation: none;
+  }
 }
 
 /* @media (min-width: 900px){
