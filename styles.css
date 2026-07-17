@@ -398,15 +398,15 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 }
 
 .resources .eyebrow {
-  font-size: 2.6rem; letter-spacing: 4px; font-weight: 800;
+  font-size: 2.6rem; letter-spacing: 2px; font-weight: 800;
 }
 
 .faq .eyebrow {
-  font-size: 2.6rem; letter-spacing: 4px; font-weight: 800;
+  font-size: 2.6rem; letter-spacing: 2px; font-weight: 800;
 }
 
 .contact .eyebrow {
-  font-size: 2.6rem; letter-spacing: 4px; font-weight: 800;
+  font-size: 2.6rem; letter-spacing: 2px; font-weight: 800;
 }
 
 .contact h2 {
