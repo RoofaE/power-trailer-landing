@@ -338,7 +338,7 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 }
 
 /* Battery care + warranty - flat panels, no glass effect */
-.care-warranty { background: var(--ink); }
+/* .care-warranty { background: var(--ink); } */
 .care-warranty-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
 .glass-panel { background: var(--panel); border-radius: 8px; padding: 30px; position: relative; border: 1px solid rgba(255,255,255,0.07); color: var(--white); --muted: #9BA3AE; }
 .glass-panel.center { text-align: center; }
