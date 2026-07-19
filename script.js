@@ -141,7 +141,7 @@ function updateScrolly() {
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
-/* ===== WEB3FORMS SUBMISSION ===== */
+/* ===== FORM SUBMISSION: Web3Forms (client-side) + Supabase (server-side) ===== */
 var form = document.getElementById('trailerForm');
 var statusEl = document.getElementById('formStatus');
 
@@ -152,14 +152,22 @@ form.addEventListener('submit', function (e) {
   var object = Object.fromEntries(formData);
   var json = JSON.stringify(object);
 
-  fetch('/api/submit', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: json
-  })
-    .then(function (response) { return response.json(); })
-    .then(function (result) {
-      if (result.success) {
+  var web3formsRequest = fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    body: json
+  }).then(function (r) { return r.json(); });
+
+  var supabaseRequest = fetch('/api/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: json
+  }).then(function (r) { return r.json(); }).catch(function () { return { success: false }; });
+
+  Promise.all([web3formsRequest, supabaseRequest])
+    .then(function (results) {
+      var web3formsResult = results[0];
+      if (web3formsResult.success) {
         statusEl.textContent = "Thanks, we'll be in touch shortly.";
         form.reset();
       } else {

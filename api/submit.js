@@ -6,34 +6,7 @@ module.exports = async (req, res) => {
   try {
     const data = req.body;
 
-    // 1. Send the email via Web3Forms
-    const web3formsRes = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify({
-        access_key: process.env.WEB3FORMS_KEY,
-        subject: data.subject || 'New Mobile Power Station Inquiry',
-        name: data.name,
-        company: data.company,
-        phone: data.phone,
-        email: data.email,
-        location: data.location,
-        primary_application: data.primary_application,
-        message: data.message,
-        request_type: data.request_type
-      })
-    });
-
-    if (!web3formsRes.ok) {
-      const errText = await web3formsRes.text();
-      return res.status(500).json({
-        success: false,
-        error: 'Web3Forms failed (' + web3formsRes.status + '): ' + errText.slice(0, 300)
-      });
-    }
-    const web3formsResult = await web3formsRes.json();
-
-    // 2. Save the same submission to Supabase
+    // Save the submission to Supabase
     const supabaseRes = await fetch(`${process.env.SUPABASE_URL}/rest/v1/submissions`, {
       method: 'POST',
       headers: {
@@ -61,7 +34,7 @@ module.exports = async (req, res) => {
       });
     }
 
-    return res.status(200).json({ success: web3formsResult.success });
+    return res.status(200).json({ success: true });
   } catch (err) {
     return res.status(500).json({ success: false, error: err.message });
   }
