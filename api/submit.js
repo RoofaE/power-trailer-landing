@@ -23,10 +23,18 @@ module.exports = async (req, res) => {
         request_type: data.request_type
       })
     });
+
+    if (!web3formsRes.ok) {
+      const errText = await web3formsRes.text();
+      return res.status(500).json({
+        success: false,
+        error: 'Web3Forms failed (' + web3formsRes.status + '): ' + errText.slice(0, 300)
+      });
+    }
     const web3formsResult = await web3formsRes.json();
 
     // 2. Save the same submission to Supabase
-    await fetch(`${process.env.SUPABASE_URL}/rest/v1/submissions`, {
+    const supabaseRes = await fetch(`${process.env.SUPABASE_URL}/rest/v1/submissions`, {
       method: 'POST',
       headers: {
         apikey: process.env.SUPABASE_SERVICE_KEY,
@@ -44,6 +52,14 @@ module.exports = async (req, res) => {
         request_type: data.request_type
       })
     });
+
+    if (!supabaseRes.ok) {
+      const errText = await supabaseRes.text();
+      return res.status(500).json({
+        success: false,
+        error: 'Supabase failed (' + supabaseRes.status + '): ' + errText.slice(0, 300)
+      });
+    }
 
     return res.status(200).json({ success: web3formsResult.success });
   } catch (err) {
