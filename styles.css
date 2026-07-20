@@ -77,8 +77,18 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 /* ===== HERO ===== */
 .hero { position: relative; height: 100vh; overflow: hidden; }
 @supports (height: 100dvh) { .hero { height: 100dvh; } }
-.hero-video-wrap { position: absolute; inset: 0; overflow: hidden; z-index: 0; }
-.hero-video-wrap iframe { position: absolute; top: 50%; left: 50%; width: 100%; height: 56.25vw; min-height: 100%; min-width: 177.78vh; transform: translate(-50%, -50%); border: 0; opacity: 0.85; pointer-events: auto; }
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  z-index: 0;
+}
+/* .hero-video-wrap { position: absolute; inset: 0; overflow: hidden; z-index: 0; }
+.hero-video-wrap iframe { position: absolute; top: 50%; left: 50%; width: 100%; height: 56.25vw; min-height: 100%; min-width: 177.78vh; transform: translate(-50%, -50%); border: 0; opacity: 0.85; pointer-events: auto; } */
 .hero-fade { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to bottom, rgba(11,13,16,0.05) 0%, rgba(11,13,16,0.4) 55%, var(--ink) 100%); }
 .hero-copy { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; text-align: center; padding: 0 6vw 100px; pointer-events: none; }
 .hero-copy .hero-ctas, .hero-copy button { pointer-events: auto; }
