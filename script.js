@@ -40,14 +40,6 @@ function animateCounter(el) {
   requestAnimationFrame(step);
 }
 
-/* ===== FLIP CARDS ===== */
-document.querySelectorAll('.flip-card').forEach(function (card) {
-  card.addEventListener('click', function () { card.classList.toggle('flipped'); });
-  card.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.classList.toggle('flipped'); }
-  });
-});
-
 /* ===== SMOOTH SCROLL + REQUEST TYPE TAGGING ===== */
 var requestTypeField = document.getElementById('requestTypeField');
 document.querySelectorAll('[data-scroll-to]').forEach(function (btn) {
@@ -63,20 +55,6 @@ document.querySelectorAll('.form-submit-row button').forEach(function (btn) {
   btn.addEventListener('click', function () {
     var requestType = btn.getAttribute('data-request-type');
     if (requestType && requestTypeField) requestTypeField.value = requestType;
-  });
-});
-
-/* ===== RUNTIME ESTIMATOR TABS ===== */
-var runtimeTabs = document.querySelectorAll('.runtime-tab');
-var runtimePanels = document.querySelectorAll('.runtime-panel');
-runtimeTabs.forEach(function (tab) {
-  tab.addEventListener('click', function () {
-    var target = tab.getAttribute('data-runtime');
-    runtimeTabs.forEach(function (t) { t.classList.remove('active'); });
-    tab.classList.add('active');
-    runtimePanels.forEach(function (panel) {
-      panel.classList.toggle('active', panel.getAttribute('data-panel') === target);
-    });
   });
 });
 
@@ -104,42 +82,6 @@ if (stickyCta && hero) {
     if (window.innerWidth > 900) stickyCta.classList.remove('visible');
   });
 }
-
-/* ===== SCROLLYTELLING: HOW IT WORKS (the one signature effect) ===== */
-var scrollyEl = document.getElementById('scrolly');
-var scrollySteps = document.querySelectorAll('.scrolly-step');
-var scrollyCounterEl = document.getElementById('scrollyCount');
-
-var ticking = false;
-
-function onScroll() {
-  if (ticking) return;
-  ticking = true;
-  requestAnimationFrame(function () {
-    updateScrolly();
-    ticking = false;
-  });
-}
-
-function updateScrolly() {
-  if (!scrollyEl || !scrollySteps.length) return;
-  var rect = scrollyEl.getBoundingClientRect();
-  var total = scrollyEl.offsetHeight - window.innerHeight;
-  var scrolled = -rect.top;
-  var progress = total > 0 ? scrolled / total : 0;
-  progress = Math.max(0, Math.min(1, progress));
-
-  var stepIndex = Math.min(scrollySteps.length - 1, Math.floor(progress * scrollySteps.length));
-
-  scrollySteps.forEach(function (step, i) {
-    step.classList.toggle('active', i === stepIndex);
-  });
-
-  if (scrollyCounterEl) scrollyCounterEl.textContent = stepIndex + 1;
-}
-
-window.addEventListener('scroll', onScroll, { passive: true });
-onScroll();
 
 /* ===== PHONE NUMBER AUTO-FORMATTING ===== */
 var phoneInput = document.getElementById('phone');
