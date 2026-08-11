@@ -247,6 +247,45 @@
   <p class="disclaimer">Performance and runtime figures are estimates from system documentation.</p>
 </section>
 
+<!-- <div class="divider b orange"></div> -->
+
+<div class="divider a red"></div>
+
+<!-- RUNTIME CALCULATOR -->
+<section class="section calculator theme-light" id="calculator">
+  <p class="eyebrow reveal">Runtime Calculator</p>
+  <h2 class="reveal">Find out how long the Power Station can run your equipment.</h2>
+  <p class="section-intro reveal">Check off the equipment you plan to power and see your estimated runtime instantly.</p>
+
+  <div class="calc-mode-toggle reveal">
+    <button class="calc-mode active" data-mode="conservative" type="button">Conservative (50% DOD)</button>
+    <button class="calc-mode" data-mode="maximum" type="button">Maximum (80% DOD)</button>
+  </div>
+
+  <div class="calc-layout reveal">
+    <div class="calc-categories" id="calcCategories"></div>
+
+    <div class="calc-results">
+      <p class="calc-results-label">Your Estimated Load</p>
+      <div class="calc-total-load"><span id="calcTotalWatts">0</span><span class="calc-unit">W</span></div>
+
+      <div class="calc-stat-row">
+        <div class="calc-stat">
+          <p class="calc-stat-label">Battery Only</p>
+          <p class="calc-stat-value" id="calcBatteryRuntime">&mdash;</p>
+        </div>
+        <div class="calc-stat">
+          <p class="calc-stat-label">While Sunny</p>
+          <p class="calc-stat-value" id="calcSunnyRuntime">&mdash;</p>
+        </div>
+      </div>
+
+      <p class="calc-status" id="calcStatus">Select equipment to get started.</p>
+      <p class="calc-warning" id="calcWarning">High power equipment may exceed inverter limits. Contact Flaman for confirmation.</p>
+    </div>
+  </div>
+</section>
+
 <div class="divider b orange"></div>
 
 <!-- IDEAL APPLICATIONS: HORIZONTAL SWIPE GALLERY
