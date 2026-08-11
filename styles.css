@@ -119,10 +119,11 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 .icon-item p { margin: 0; font-family: var(--label); font-weight: 600; font-size: 0.9rem; color: inherit; }
 
 /* Perfect for headline sizing */
-.perfect-for h2 { font-size: clamp(1rem, 4vw, 1.8rem); font-weight: 800; letter-spacing: 0.6px; }
-.perfect-for .eyebrow { font-size: 1.6rem; letter-spacing: 4px; font-weight: 800; }
+.perfect-for h2 { font-size: clamp(1rem, 4vw, 0.7rem); font-weight: 300; letter-spacing: 0.6px; }
+.perfect-for .eyebrow { font-size: clamp(2.4rem, 8vw, 3rem); letter-spacing: 2px; font-weight: 800; }
 
 /* Why choose - plain rows with numbered watermark */
+.why-choose .eyebrow { font-size: clamp(2.4rem, 4vw, 3rem); letter-spacing: 2px; font-weight: 800; }
 .why-list { counter-reset: why-counter; }
 .why-row { counter-increment: why-counter; position: relative; padding: 24px 0 24px 90px; border: 1px solid transparent; transition: border-color 0.25s ease; }
 .why-row:hover { border-color: rgba(247, 148, 29, 0.6); }
@@ -193,6 +194,8 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 
 /* ===== RUNTIME CALCULATOR ===== */
 .calc-mode-toggle { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0 30px; }
+.calculator .eyebrow { font-size: clamp(2.4rem, 8vw, 5rem); letter-spacing: 2px; font-weight: 300; }
+.calculator h2 { font-size: clamp(1.5rem, 2.6vw, 1.6rem); letter-spacing: 2px; font-weight: 300; }
 .calc-mode {
   font-family: var(--label); font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
   background: transparent; color: var(--muted); border: 1px solid var(--hairline);
