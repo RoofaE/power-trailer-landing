@@ -155,7 +155,7 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
   .why-row:nth-child(4) { margin-left: 48px; }
   .why-choose .eyebrow {font-size: 19px; }
   .faq .eyebrow {font-size: 26px !important; }
-  .contact .eyebrow {font-size: 22px !important; }
+  .contact .eyebrow {font-size: 20px !important; }
   .contact h2 {font-size: 10px !important; }
 }
 .why-row h3 { font-size: 1rem; min-width: 220px; font-weight: 300; }
