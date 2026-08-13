@@ -82,9 +82,9 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
 .hero-fade { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to bottom, rgba(11,13,16,0.05) 0%, rgba(11,13,16,0.4) 55%, var(--ink) 100%); }
 .hero-copy { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; text-align: center; padding: 0 6vw 200px; pointer-events: none;}
 .hero-copy .hero-ctas, .hero-copy button { pointer-events: auto; }
-.hero-eyebrow { font-family: var(--label); letter-spacing: 3px; text-transform: uppercase; color: var(--orange); font-size: 0.9rem; margin-bottom: 10px; }
+.hero-eyebrow { font-family: var(--label); letter-spacing: 3px; text-transform: uppercase; color: rgb(255, 147, 76); font-size: 0.9rem; margin-bottom: 10px; }
 .hero-copy h1 { font-size: clamp(2.4rem, 7vw, 4.6rem); line-height: 1.05; }
-.hero-sub { color: var(--muted); font-size: 1.1rem; margin: 16px auto 24px; max-width: 620px; }
+.hero-sub { color: white; font-size: 1.1rem; margin: 16px auto 24px; max-width: 620px; }
 .hero-ctas { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
 
 @media (max-width: 600px) {
@@ -153,6 +153,10 @@ h1, h2, h3 { font-family: var(--display); text-transform: uppercase; letter-spac
   .why-row:nth-child(2) { margin-left: 16px; }
   .why-row:nth-child(3) { margin-left: 32px; }
   .why-row:nth-child(4) { margin-left: 48px; }
+  .why-choose .eyebrow {font-size: 19px; }
+  .faq .eyebrow {font-size: 26px !important; }
+  .contact .eyebrow {font-size: 22px !important; }
+  .contact h2 {font-size: 10px !important; }
 }
 .why-row h3 { font-size: 1rem; min-width: 220px; font-weight: 300; }
 .why-row p { color: var(--muted); margin: 0; }
