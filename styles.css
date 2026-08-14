@@ -13,7 +13,6 @@
   --label: "Barlow Condensed", sans-serif;
 }
 
-/* Light-themed sections (white/paper background, dark text) */
 .theme-light {
   background: var(--paper);
   color: var(--ink);
@@ -416,7 +415,6 @@ h3 {
   max-width: 760px;
 }
 
-/* Perfect for / resources - simple icon rows */
 .icon-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -976,7 +974,6 @@ h3 {
   font-weight: 800;
 }
 
-/* Contact form - simple, calm */
 .contact-form {
   max-width: 680px;
   background: var(--panel);
